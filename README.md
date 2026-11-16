@@ -13,6 +13,7 @@ This repo provides a tiny CLI script that transcribes an audio file (e.g. Telegr
 ## Requirements
 
 - Python **3.10+** (3.12 recommended)
+- PyAV is constrained below 17 because faster-whisper currently passes `metadata_errors` to its decoder, an argument removed in PyAV 17
 - `ffmpeg` may be needed depending on audio formats and your environment
 
 ## Install

@@ -1,1 +1,2 @@
 faster-whisper>=1.1.0
+av>=11,<17  # PyAV 17+ removed metadata_errors used by faster-whisper audio decoding
